@@ -1,5 +1,6 @@
 package com.example.todolist;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +8,8 @@ import android.content.ContentValues;
 import android.content.DialogInterface;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -24,6 +27,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity  {
 
+    private ActionBar actionBar;
     //TAG constant is created with the name of the class for logging.
     private static final String TAG = "MainActivity";
     private TaskDbHelper mHelper;
@@ -35,6 +39,13 @@ public class MainActivity extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        actionBar = getSupportActionBar();
+        ColorDrawable colorDrawable
+                = new ColorDrawable(Color.parseColor("#BB86FC"));
+
+        // Set BackgroundDrawable
+        actionBar.setBackgroundDrawable(colorDrawable);
 
         //initializing mHelper variable
         mHelper = new TaskDbHelper(this);
