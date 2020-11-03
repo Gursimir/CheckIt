@@ -4,6 +4,8 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+
+//This is the helper class to open database.
 public class TaskDbHelper extends SQLiteOpenHelper {
 
     public TaskDbHelper(Context context) {

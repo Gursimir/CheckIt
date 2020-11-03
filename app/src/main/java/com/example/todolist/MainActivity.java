@@ -24,6 +24,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity  {
 
+    //TAG constant is created with the name of the class for logging.
     private static final String TAG = "MainActivity";
     private TaskDbHelper mHelper;
     private ListView mTaskListView;
@@ -47,17 +48,25 @@ public class MainActivity extends AppCompatActivity  {
         updateUI();
     }
 
+    //The onCreateOptionsMenu() method inflates (renders) the menu
+    // in the main activity, and uses the onOptionsItemSelected()
+    // method to react to different user interactions with the menu item(s).
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
+    //the onOptionsItemSelected() method is created to react
+    // to different user interactions with the menu item(s).
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_add_task:
                 final EditText taskEditText = new EditText(this);
+
+                //AlertDialog is added to get the task from the user
+                // when the add item button is clicked.
                 AlertDialog dialog = new AlertDialog.Builder(this)
                         .setTitle("Add a new task")
                         .setMessage("What do you want to do next?")
