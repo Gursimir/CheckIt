@@ -16,7 +16,6 @@ The ingredients every Android developer needs are:
 ## ScreenShots
 
 
-
 <table>
   <tr>
     <td>Splash Screen</td>
