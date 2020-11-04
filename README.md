@@ -1,4 +1,7 @@
 # CheckIt
+
+![alt text](app/src/main/res/mipmap-xxxhdpi/ic_launcher.png)
+
 App for keeping a list of things to do & buy
 
 ## Software Used
