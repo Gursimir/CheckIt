@@ -1,5 +1,5 @@
 # CheckIt
-App for keeping a list of things to do buy
+App for keeping a list of things to do & buy
 
 ## Software Used
 The ingredients every Android developer needs are:
