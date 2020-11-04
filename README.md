@@ -14,3 +14,17 @@ The ingredients every Android developer needs are:
 4. Basic Java knowledge
 
 ## ScreenShots
+
+#### SplashScreen
+
+![alt text](app/src/main/res/drawable/splashscreen.jpg)
+
+
+#### Main Page
+
+![alt text](app/src/main/res/drawable/homepage.jpg)
+
+
+#### Add the task
+
+![alt text](app/src/main/res/drawable/addtask.jpg)
