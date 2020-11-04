@@ -128,6 +128,7 @@ public class MainActivity extends AppCompatActivity  {
         db.close();
     }
 
+
     //the task is deleted once it is finish mean when delete button is clicked
     public void deleteTask(View view) {
         View parent = (View) view.getParent();
