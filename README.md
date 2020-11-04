@@ -20,14 +20,12 @@ The ingredients every Android developer needs are:
   <tr>
     <td>Splash Screen</td>
     <td>Main Page</td>
+    <td>Add the task</td>
   </tr>
   <tr>
     <td><img src="app/src/main/res/drawable/splashscreen.jpg" width=270 height=480></td>
     <td><img src="app/src/main/res/drawable/homepage.jpg" width=270 height=480></td>
+    <td><img src="app/src/main/res/drawable/addtask.jpg" width=270 height=480></td>
   </tr>
  </table>
 
-
- ### Add the task
-
- ![alt text](app/src/main/res/drawable/addtask.jpg)
